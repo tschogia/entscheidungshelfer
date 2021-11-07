@@ -1,28 +1,46 @@
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+</head>
+
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <app-header></app-header>
+    <app-start></app-start>
+    <app-hello></app-hello>
+    <app-card></app-card>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue';
+import HelloWorld from "./components/HelloWorld";
+import Card from "./components/Card";
+import Start from "./components/Start";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    'app-header': Header,
+    'app-hello': HelloWorld,
+    'app-card': Card,
+    'app-start': Start
+  },
+  data() {
+    return {
+    }
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+body {
+  margin: 0px;
+  font-family: "Inter", sans-serif;
 }
 </style>
