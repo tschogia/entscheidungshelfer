@@ -1,46 +1,33 @@
-<head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-</head>
-
 <template>
-  <div>
-    <app-header></app-header>
-    <app-start></app-start>
-    <app-hello></app-hello>
-    <app-card></app-card>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/entscheidungshelfer">Entscheidungshelfer</router-link> |
+      <router-link to="/result">Result</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import Header from './components/Header.vue';
-import HelloWorld from "./components/HelloWorld";
-import Card from "./components/Card";
-import Start from "./components/Start";
-
-export default {
-  components: {
-    'app-header': Header,
-    'app-hello': HelloWorld,
-    'app-card': Card,
-    'app-start': Start
-  },
-  data() {
-    return {
-    }
-  }
-}
-</script>
-
-<style>
+<style lang="scss">
 #app {
-  font-family: "Inter", sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
-body {
-  margin: 0px;
-  font-family: "Inter", sans-serif;
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
