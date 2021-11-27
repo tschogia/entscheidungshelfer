@@ -1,9 +1,12 @@
 <template>
   <v-app>
+    <v-container>
     <div>
-    <h1>Willkommen beim Entscheidungshelfer!</h1>
-    <v-btn class="text-button" to="/entscheidungshelfer">Entscheidungshelfer</v-btn>
+      <h1>Willkommen beim Entscheidungshelfer!</h1>
+      <img src="../assets/entschidungshelfer.jpeg" alt="" class="center" style="margin-top: 2rem">
+      <v-btn class="text-button" to="/entscheidungshelfer">Entscheidungshelfer</v-btn>
     </div>
+    </v-container>
   </v-app>
 </template>
 
@@ -48,6 +51,13 @@ li {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 a {
