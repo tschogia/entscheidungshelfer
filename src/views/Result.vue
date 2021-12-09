@@ -12,14 +12,14 @@
         - Ist Ihr Ergebnis grösser als 20, wird ihnen ein Digitales Mockup Tool mit Interaktionsmöglichkeiten Entschieden.
       </div>
     </div>
-    <div v-if="summeCard <= 12">
+    <div v-if="summeCard <= 53">
       <h2> Versuchen sie ein Mockup auf Papier zu erstellen um die ersten erfahrungen zu sammeln</h2>
       <img src="../assets/lofi-hifi-proto-sq-1024x1024.jpeg" alt="" style="margin-top: 2rem">
     </div>
-    <div v-if="summeCard > 12 && summeCard < 20">
+    <div v-if="summeCard > 54 && summeCard < 100">
       <h2> Erstellen sie ein digitales Mockup ohne Interaktion</h2>
     </div>
-    <div v-if="summeCard > 20">
+    <div v-if="summeCard > 100">
       <h2> Erstellen sie ein digitales Mockup mit Interaktion</h2>
       <img src="../assets/05.jpeg" alt="" style="margin-top: 2rem">
     </div>

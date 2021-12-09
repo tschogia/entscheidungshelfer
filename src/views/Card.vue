@@ -43,75 +43,75 @@ export default {
       questions: [
         {question: "Wie viele Personen in ihrem Projekt arbeiten mit dem Mockup?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 2,
           min: "eine",
           max: "viele"
         },
         {question: "Werden im Projekt mehrere Personen gleichzeitig mit dem MockUp arbeiten?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 2,
           min: "eher nein",
           max: "eher ja"
         },
         {question: "Arbeiten die Mitarbeiter des ganzen Projekts ortsunabhängig?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 2,
           min: "eher nein",
           max: "eher ja"
         },
         {question: "Soll das MockUp verwendet werden, um eine durchgängige User Experience darzustellen?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 3,
           min: "eher nein",
           max: "eher ja"
         },
         {question: "Soll das MockUp verwendet werden, um genaue Abläufe von technischen Funktionen der " +
               "Webseite (z.B. Filterfunktion, Suchfunktion, Darstellungsfunktionen etc.) zu detaillieren?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 3,
           min: "eher nein",
           max: "eher ja"
         },
         {question: "Soll das erstellte MockUp verwendet werden, um Usertests durchzuführen?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 2,
           min: "eher nein",
           max: "eher ja"
         },
         {question: "Welchen Detailierungsgrad wird mit dem MockUp in Hinblick zur endgültigen Lösung angestrebt?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 2,
           min: "simpel",
           max: "detailiert"
         },
         {question: "Wie wichtig beurteilen sie den Designe-Aspekt, des von ihnen angestrebten MockUps?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 1,
           min: "nicht relevant",
           max: "sehr relevant"
         },
         {question: "Wenn sie die Funktionalitäten und Umfang des User Interface betrachten, welches " +
               "mit dem MockUp dargestellt wird, wie komplex würden sie die Lösung beschrieben? ",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 4,
           min: "nicht komplex",
           max: "sehr komplex"
         },
         {question: "Ist das Vorhaben starken zeitlichen Druck ausgesetzt?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 2,
           min: "eher nein",
           max: "eher ja"
         },
         {question: "Ist das Vorhaben starken finanziellen Druck ausgesetzt?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 2,
           min: "eher nein",
           max: "eher ja"
         },
         {question: "in welcher Phase des Projekts befinden sie sich?",
           answer: 0,
-          gewichtung: 0.7,
+          gewichtung: 2,
           min: "Entscheidungsfindung",
           max: "Detailiert Planung"
         }
@@ -121,7 +121,7 @@ export default {
   methods: {
     berechnen: function () {
       for (const q in this.questions) {
-        this.summeAllerFragen = +this.summeAllerFragen + +this.questions[q].answer;
+        this.summeAllerFragen = +this.summeAllerFragen + (+this.questions[q].answer * +this.questions[q].gewichtung);
       }
       this.$router.push({name: 'Result', params: { summeCard: this.summeAllerFragen } });
     }
