@@ -14,16 +14,16 @@
     <br>
     <v-btn class="text-button" @click="goto('h2')" style="margin-bottom: 2rem ">mehr Details</v-btn>
     <h1>Ergebins:</h1>
-    <div v-if="summeCard <= 67">
+    <div v-if="summeCard <= 25">
       <h2> Versuchen sie ein Mockup auf Papier zu erstellen um die ersten erfahrungen zu sammeln</h2>
       <img src="../assets/lofi-hifi-proto-sq-1024x1024.jpeg" alt="" style="margin-top: 2rem">
     </div>
-    <div v-if="summeCard > 67 && summeCard < 120">
+    <div v-if="summeCard > 25 && summeCard < 42">
       <h2> Erstellen sie ein digitales Mockup ohne Interaktion</h2>
       <div class="center" style="margin-top: 1rem; margin-bottom: 1rem">{{ descriptions[1].desctiption }}</div>
 
     </div>
-    <div v-if="summeCard > 100">
+    <div v-if="summeCard > 42">
       <h2> Erstellen sie ein digitales Mockup mit Interaktion</h2>
       <img src="../assets/05.jpeg" alt="" style="margin-top: 2rem">
     </div>

@@ -129,6 +129,7 @@ export default {
       for (const q in this.questions) {
         this.summeAllerFragen = +this.summeAllerFragen + (+this.questions[q].answer * +this.questions[q].gewichtung);
       }
+      this.summeAllerFragen = this.summeAllerFragen / 100;
       this.$router.push({name: 'Result', params: { summeCard: this.summeAllerFragen } });
     }
   }
