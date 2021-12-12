@@ -8,10 +8,12 @@
         Gerne möchten wir Ihnen mehr über uns,
         sowie den Entscheidungshelfer selber erzählen.
         <br>
+        <br>
         Wir sind 3 Studierende im Studiengang Wirtschaftsinformatik an der Zürcher Hochschule für angewandte Wissenschaften.
         Im Modul «Integration» haben wir uns für die Aufgabe entschieden, den Unterschied zwischen verschiedenen
         Mockup-Tools genauer zu analysieren und aufgrund diesen Analysen einen Entscheidungshelfer zu programmieren,
         welcher die Wahl eines Mockup-Tools erleichtern soll.
+        <br>
         <br>
         In diesem Entscheidungshelfer werden Ihnen diverse Fragen zu Ihrem Projekt gestellt.
         Im Hintergrund wird dann aufgrund dieser Fragen eine Empfehlung für sie berechnet und anschliessend vorgeschlagen.
@@ -72,8 +74,9 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
   text-align: justify;
+  font-size: 21px;
 }
 
 a {

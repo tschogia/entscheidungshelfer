@@ -19,13 +19,15 @@
     <div v-if="summeCard > 25 && summeCard < 35">
       <h2> Erstellen sie ein digitales Mockup ohne Interaktion</h2>
       <div class="center" style="margin-top: 1rem; margin-bottom: 1rem">{{ descriptions[1].desctiption }}</div>
+      <img src="../assets/walling-2-a9wDBS1KE-unsplash.jpg" alt="" style="margin-top: 2rem; width: 60%">
     </div>
     <div v-if="summeCard > 35">
       <h2> Erstellen sie ein digitales Mockup mit Interaktion</h2>
       <div class="center" style="margin-top: 1rem; margin-bottom: 1rem">{{ descriptions[2].desctiption }}</div>
       <img src="../assets/05.jpeg" alt="" style="margin-top: 2rem">
     </div>
-    <v-btn class="text-button" @click="goto('h2')" style="margin-bottom: 2rem ">mehr Details</v-btn>
+    <br>
+    <h2>Details zur Entscheidung:</h2>
     <div>
       <h2 class="center" style="margin-top: 1rem; margin-bottom: 1rem">
         Das Fragen des Entscheidungshelfers sind in verschiedene Kategorien unterteilt und werden anhand der
@@ -33,7 +35,7 @@
       </h2>
       <img src="../assets/Praeferenzmatrix.png" style="margin-top: 2rem">
     </div>
-    <h2 ref="h2">Das Ergebnis ihrer Fragen ist: {{ summeCard }}</h2>
+   <!-- <h2 ref="h2">Das Ergebnis ihrer Fragen ist: {{ summeCard }}</h2> -->
     <v-btn class="text-button" v-on:click="back" style="margin-bottom: 2rem; margin-top: 2rem"> Zurück zum Entscheidungshelfer</v-btn>
   </div>
 
@@ -52,6 +54,7 @@ export default {
     },
     back() {
       this.$router.push({name: 'Entscheidungshelfer'});
+      window.scrollTo(0,0);
     }
   },
     props: ['summeCard'],

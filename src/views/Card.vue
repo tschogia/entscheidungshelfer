@@ -131,6 +131,7 @@ export default {
       }
       this.summeAllerFragen = this.summeAllerFragen / 100;
       this.$router.push({name: 'Result', params: { summeCard: this.summeAllerFragen } });
+      window.scrollTo(0,0);
     }
   }
 }
