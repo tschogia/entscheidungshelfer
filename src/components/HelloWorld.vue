@@ -2,9 +2,24 @@
   <v-app>
     <v-container>
     <div>
-      <h1>Willkommen beim Entscheidungshelfer!</h1>
-      <img src="../assets/entschidungshelfer.jpeg" alt="" class="center" style="margin-top: 2rem">
+      <h1>Herzlich Willkommen beim Mockup-Entscheidungshelfer!</h1>
+      <br>
+      <div class="center">
+        Gerne möchten wir Ihnen mehr über uns,
+        sowie den Entscheidungshelfer selber erzählen.
+        <br>
+        Wir sind 3 Studierende im Studiengang Wirtschaftsinformatik an der Zürcher Hochschule für angewandte Wissenschaften.
+        Im Modul «Integration» haben wir uns für die Aufgabe entschieden, den Unterschied zwischen verschiedenen
+        Mockup-Tools genauer zu analysieren und aufgrund diesen Analysen einen Entscheidungshelfer zu programmieren,
+        welcher die Wahl eines Mockup-Tools erleichtern soll.
+        <br>
+        In diesem Entscheidungshelfer werden Ihnen diverse Fragen zu Ihrem Projekt gestellt.
+        Im Hintergrund wird dann aufgrund dieser Fragen eine Empfehlung für sie berechnet und anschliessend vorgeschlagen.
+        Das Ergebnis soll Aufschluss darüber geben, wie Sie ihr Mockup am besten erstellen,
+        ob beispielsweise per Hand, statisch oder interakitv.
+      </div>
       <v-btn class="text-button" to="/entscheidungshelfer">Entscheidungshelfer</v-btn>
+      <img src="../assets/entschidungshelfer.jpeg" alt="" class="center" style="margin-top: 2rem">
     </div>
     </v-container>
   </v-app>

@@ -53,7 +53,7 @@ export default {
           min: "nein",
           max: "ja"
         },
-        {question: "Arbeiten die Mitarbeiter des ganzen Projekts am gleichen Ort oder wird ortsunabhängig?",
+        {question: "Arbeiten die Mitarbeiter des ganzen Projekts am gleichen Ort oder ortsunabhängig?",
           answer: 0,
           gewichtung: 24,
           min: "gleicher Ort",

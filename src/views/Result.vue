@@ -16,15 +16,17 @@
     <h1>Ergebins:</h1>
     <div v-if="summeCard <= 25">
       <h2> Versuchen sie ein Mockup auf Papier zu erstellen um die ersten erfahrungen zu sammeln</h2>
+      <div class="center" style="margin-top: 1rem; margin-bottom: 1rem">{{ descriptions[0].desctiption }}</div>
       <img src="../assets/lofi-hifi-proto-sq-1024x1024.jpeg" alt="" style="margin-top: 2rem">
     </div>
-    <div v-if="summeCard > 25 && summeCard < 42">
+    <div v-if="summeCard > 25 && summeCard < 35">
       <h2> Erstellen sie ein digitales Mockup ohne Interaktion</h2>
       <div class="center" style="margin-top: 1rem; margin-bottom: 1rem">{{ descriptions[1].desctiption }}</div>
 
     </div>
-    <div v-if="summeCard > 42">
+    <div v-if="summeCard > 35">
       <h2> Erstellen sie ein digitales Mockup mit Interaktion</h2>
+      <div class="center" style="margin-top: 1rem; margin-bottom: 1rem">{{ descriptions[2].desctiption }}</div>
       <img src="../assets/05.jpeg" alt="" style="margin-top: 2rem">
     </div>
     <h2 ref="h2">Das Ergebnis ihrer Fragen ist: {{ summeCard }}</h2>
@@ -59,7 +61,15 @@ export default {
           {result: "Mockup mit Interaktion", answer: 0},
         ],
         descriptions: [
-          {title: "Mockup / Wireframe auf Papier", desctiption: ""},
+          {title: "Mockup / Wireframe auf Papier", desctiption: "Aufgrund deiner Antworten empfehlen wir " +
+                "dir das Arbeiten mit Handskizzen und statischen Wireframes. Die dadurch erhaltene Repräsentation " +
+                "des Designs und Darstellung der verwendeten Positionierung und Grösse der Elemente ist für dein Projekt ausreichend. " +
+                "Fokussiere dich auf die einzelnen Elemente der späteren Seite, diese innerhalb des Layouts anzuordnen und nicht ein " +
+                "finales Design der Webseite jetzt zu spezifizieren.\n" +
+                "Als Gedankenstütze: Ein Wirframe sollte die folgenden Punkte abbilden:" +
+                "Die Hauptelemente der Inhalte (Was?)" +
+                "Die Struktur der Informationen (Wo?)" +
+                "Eine Beschreibung und grundlegende Visualisierung der Benutzerschnittstelle (Wie?)"},
           {
             title: "diegitales statisches Mockup", desctiption: "Ein Digitales Mockup hat im Gegensatz " +
                 "zur Papierform den Vorteil, dass mehrere Personen gleichzeitig daran arbeiten können. " +
@@ -70,7 +80,14 @@ export default {
                 "vor lässt. Bis hin zum vollständigen Design, welches den Stakeholdern oder gar den End Usern bereits gezeigt " +
                 "werden kann um Feedback zu geben. "
           },
-          {title: "diegitales interaktives Mockup", desctiption: ""}
+          {title: "diegitales interaktives Mockup", desctiption: "Durch die von Ihnen bereitgestellten Informationen, " +
+                "schlägt der Entscheidungshelfer die Erstellung eines interaktiven Mockups vor. " +
+                "Interaktivität bedeutet, dass mit Ihrem Mockup interagiert werden kann. " +
+                "Beispielsweise wird mit einem Klick auf einen Button eine neue Seite geöffnet. " +
+                "Interaktivität muss jedoch nicht immer auch High-Fidelity, aslo eine hohe Wiedergabetreue, " +
+                "bedeuten. Interaktivität lässt sich heutzutage mit beinahe allen gängigen Mockup-Tools integrieren. " +
+                "Ein Beispiel für ein Interaktives Low-Fidelity Tool ist Balsamiq. Wird jedoch High-Fidelity gewünscht, " +
+                "so sind andere Tools wie beispielsweise Axure oder Adobe XD zu empfehlen."}
         ]
       }
     }
