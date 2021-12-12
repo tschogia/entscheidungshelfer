@@ -21,7 +21,6 @@
         ob beispielsweise per Hand, statisch oder interakitv.
       </div>
       <v-btn class="text-button" to="/entscheidungshelfer">Entscheidungshelfer</v-btn>
-      <img src="../assets/entschidungshelfer.jpeg" alt="" class="center" style="margin-top: 2rem">
     </div>
     </v-container>
   </v-app>
