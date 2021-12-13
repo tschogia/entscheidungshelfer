@@ -59,7 +59,7 @@ export default {
           min: "gleicher Ort",
           max: "ortsunabhängig"
         },
-        {question: "Soll das MockUp verwendet werden, um eine durchgängige User Experience darzustellen?",
+        {question: "Soll das MockUp verwendet werden um eine durchgängige User Experience darzustellen?",
           answer: 0,
           gewichtung: 120,
           min: "nie",
@@ -72,19 +72,19 @@ export default {
           min: "nie",
           max: "oft"
         },
-        {question: "Soll das erstellte MockUp verwendet werden, um Usertests durchzuführen?",
+        {question: "Soll das erstellte MockUp verwendet werden um Usertests durchzuführen?",
           answer: 0,
           gewichtung: 120,
           min: "nie",
           max: "oft"
         },
-        {question: "Welchen Detailierungsgrad wird mit dem MockUp in Hinblick zur endgültigen Lösung angestrebt?",
+        {question: "Welcher Detaillierungsgrad wird mit dem MockUp hinsichtlich der endgültigen Lösung angestrebt?",
           answer: 0,
           gewichtung: 84,
           min: "simpel",
           max: "detailiert"
         },
-        {question: "Soll das MockUp verwendet werden um zu prüfen, ob echte Nutzer das Tool intuitiv verstehen?",
+        {question: "Soll das MockUp verwendet werden um zu prüfen ob echte Nutzer das Tool intuitiv verstehen?",
           answer: 0,
           gewichtung: 72,
           min: "nie",
