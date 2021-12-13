@@ -65,7 +65,7 @@ export default {
           min: "nie",
           max: "oft"
         },
-        {question: "Soll das MockUp verwendet werden, um genaue Abläufe von technischen Funktionen der " +
+        {question: "Soll das MockUp verwendet werden um genaue Abläufe von technischen Funktionen der " +
               "Webseite (z.B. Filterfunktion, Suchfunktion, Darstellungsfunktionen etc.) zu detaillieren?",
           answer: 0,
           gewichtung: 96,
@@ -84,7 +84,7 @@ export default {
           min: "simpel",
           max: "detailiert"
         },
-        {question: "Soll das MockUp verwendet werden, um zu prüfen, ob echte Nutzer das Tool intuitiv verstehen?",
+        {question: "Soll das MockUp verwendet werden um zu prüfen, ob echte Nutzer das Tool intuitiv verstehen?",
           answer: 0,
           gewichtung: 72,
           min: "nie",
