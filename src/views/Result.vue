@@ -5,14 +5,15 @@
     <h1>Ergebnis:</h1>
     <div v-if="summeCard <= 25">
       <h2> Versuchen sie ein Mockup auf Papier zu erstellen um die ersten erfahrungen zu sammeln</h2>
-      <div class="center" style="margin-top: 1rem; margin-bottom: 1rem">
-        {{ descriptions[0].desctiption }}
+      <div class="center-left" style="margin-top: 1rem; margin-bottom: 1rem">
+        <div style="text-align: justify">{{ descriptions[0].desctiption }}</div>
         <br>
-        <br>
-        <div style="font-weight: bold"> Als Gedankenstütze: Ein Wirframe sollte die folgenden Punkte abbilden:<br></div>
+        <div style="font-weight: bold; text-align: left;"> Als Gedankenstütze: Ein Wireframe sollte die folgenden Punkte abbilden:<br></div>
+        <div style="text-align: left">
         - Die Hauptelemente der Inhalte (Was?)<br>
         - Die Struktur der Informationen (Wo?)<br>
         - Eine Beschreibung und grundlegende Visualisierung der Benutzerschnittstelle (Wie?)
+        </div>
       </div>
       <img src="../assets/die-besten-wireframe-tools.jpg" alt="" style="margin-top: 2rem">
     </div>
@@ -88,9 +89,9 @@ export default {
                 "schlägt der Entscheidungshelfer die Erstellung eines interaktiven Mockups vor. " +
                 "Interaktivität bedeutet, dass mit Ihrem Mockup interagiert werden kann. " +
                 "Beispielsweise wird mit einem Klick auf einen Button eine neue Seite geöffnet. " +
-                "Interaktivität muss jedoch nicht immer auch High-Fidelity, aslo eine hohe Wiedergabetreue, " +
-                "bedeuten. Interaktivität lässt sich heutzutage mit beinahe allen gängigen Mockup-Tools integrieren. " +
-                "Ein Beispiel für ein Interaktives Low-Fidelity Tool ist Balsamiq. Wird jedoch High-Fidelity gewünscht, " +
+                "Interaktivität muss jedoch nicht immer auch High-Fidelity, also eine hohe Wiedergabetreue " +
+                "bedeuten. Interaktivität lässt sich mit beinahe allen gängigen Mockup-Tools integrieren. " +
+                "Ein Beispiel für ein interaktives Low-Fidelity Tool ist Balsamiq. Wird jedoch High-Fidelity gewünscht, " +
                 "so sind andere Tools wie beispielsweise Axure oder Adobe XD zu empfehlen."}
         ]
       }
@@ -105,6 +106,14 @@ export default {
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
+  width: 50%;
+  font-size: 21px;
+}
+
+.center-left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
   font-size: 21px;
 }

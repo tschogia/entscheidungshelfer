@@ -2,7 +2,7 @@
   <v-app>
     <v-container>
     <div>
-      <h1>Herzlich Willkommen beim Mockup-Entscheidungshelfer!</h1>
+      <h1>Herzlich willkommen beim Mockup-Entscheidungshelfer!</h1>
       <br>
       <div class="center">
         Gerne möchten wir Ihnen mehr über uns,

@@ -3,7 +3,7 @@
     <v-container class="center">
       <h1>Entschteidungshelfer</h1>
       <br>
-      <h3>Bitte füllen sie die Fragen so wahrtheitsgetrue wie möglich aus um ein zufriedenstellendes Ergebnis zu erhalten.</h3>
+      <h3>Bitte füllen sie die Fragen so wahrheitsgetrue wie möglich aus um ein zufriedenstellendes Ergebnis zu erhalten.</h3>
     </v-container>
     <v-container id="card">
       <v-flex v-for="question in questions" :key="question.question" class="card center">
@@ -84,32 +84,32 @@ export default {
           min: "simpel",
           max: "detailiert"
         },
-        {question: "Soll das MockUp verwendet werden, um zu prüfen, ob echte Nutzer das Tool intuitiv versteht?",
+        {question: "Soll das MockUp verwendet werden, um zu prüfen, ob echte Nutzer das Tool intuitiv verstehen?",
           answer: 0,
           gewichtung: 72,
           min: "nein",
           max: "ja"
         },
-        {question: "Wie wichtig beurteilen sie den Designe-Aspekt, des von ihnen angestrebten MockUps?",
+        {question: "Wie wichtig beurteilen sie den Design-Aspekt, des von ihnen angestrebten MockUp's?",
           answer: 0,
           gewichtung: 60,
           min: "nicht relevant",
           max: "sehr relevant"
         },
-        {question: "Wenn sie die Funktionalitäten und Umfang des User Interface betrachten, welches " +
+        {question: "Wenn sie die Funktionalitäten und Umfang des User Interface betrachten welches " +
               "mit dem MockUp dargestellt wird, wie komplex würden sie die Lösung beschrieben? ",
           answer: 0,
           gewichtung: 144,
           min: "nicht komplex",
           max: "sehr komplex"
         },
-        {question: "Ist das Vorhaben starken zeitlichen Druck ausgesetzt?",
+        {question: "Ist das Vorhaben starkem zeitlichen Druck ausgesetzt?",
           answer: 0,
           gewichtung: 96,
           min: "ja",
           max: "nein"
         },
-        {question: "Ist das Vorhaben starken finanziellen Druck ausgesetzt?",
+        {question: "Ist das Vorhaben starkem finanziellen Druck ausgesetzt?",
           answer: 0,
           gewichtung: 96,
           min: "ja",
@@ -118,8 +118,8 @@ export default {
         {question: "in welcher Phase des Projekts befinden sie sich?",
           answer: 0,
           gewichtung: 72,
-          min: "Entscheidungsfindung",
-          max: "fortgeschritten"
+          min: "Analyse",
+          max: "Umsetzung"
         }
       ]
     }
