@@ -6,19 +6,19 @@
       <br>
       <div class="center">
         Gerne möchten wir Ihnen mehr über uns,
-        sowie den Entscheidungshelfer selber erzählen.
+        sowie den Entscheidungshelfer erzählen.
         <br>
         <br>
         Wir sind 3 Studierende im Studiengang Wirtschaftsinformatik an der Zürcher Hochschule für angewandte Wissenschaften.
         Im Modul «Integration» haben wir uns für die Aufgabe entschieden, den Unterschied zwischen verschiedenen
-        Mockup-Tools genauer zu analysieren und aufgrund diesen Analysen einen Entscheidungshelfer zu programmieren,
+        Mockup-Tools genauer zu analysieren und aufgrund dieser Analysen einen Entscheidungshelfer zu programmieren,
         welcher die Wahl eines Mockup-Tools erleichtern soll.
         <br>
         <br>
-        In diesem Entscheidungshelfer werden Ihnen diverse Fragen zu Ihrem Projekt gestellt.
-        Im Hintergrund wird dann aufgrund dieser Fragen eine Empfehlung für sie berechnet und anschliessend vorgeschlagen.
-        Das Ergebnis soll Aufschluss darüber geben, wie Sie ihr Mockup am besten erstellen,
-        ob beispielsweise per Hand, statisch oder interakitv.
+        In diesem Entscheidungshelfer werden diverse Fragen zum Projekt gestellt.
+        Im Hintergrund wird aufgrund dieser Fragen eine Empfehlung berechnet und anschliessend vorgeschlagen.
+        Das Ergebnis soll Aufschluss darüber geben, wie das Mockup am besten erstellt wird -
+        beispielsweise per Hand, statisch oder interaktiv.
       </div>
       <v-btn class="text-button" to="/entscheidungshelfer">Entscheidungshelfer</v-btn>
     </div>

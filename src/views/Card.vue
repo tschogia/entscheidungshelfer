@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-container class="center">
-      <h1>Entschteidungshelfer</h1>
+      <h1>Entscheidungshelfer</h1>
       <br>
-      <h3>Bitte füllen sie die Fragen so wahrheitsgetrue wie möglich aus um ein zufriedenstellendes Ergebnis zu erhalten.</h3>
+      <h3>Bitte füllen sie die Fragen so wahrheitsgetreu wie möglich aus um ein zufriedenstellendes Ergebnis zu erhalten.</h3>
     </v-container>
     <v-container id="card">
       <v-flex v-for="question in questions" :key="question.question" class="card center">
