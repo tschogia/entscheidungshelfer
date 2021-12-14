@@ -82,7 +82,7 @@ export default {
           answer: 0,
           gewichtung: 84,
           min: "simpel",
-          max: "detailiert"
+          max: "detailliert"
         },
         {question: "Soll das MockUp verwendet werden um zu prüfen ob echte Nutzer das Tool intuitiv verstehen?",
           answer: 0,

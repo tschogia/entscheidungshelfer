@@ -4,7 +4,7 @@
   <div id="result">
     <h1>Ergebnis:</h1>
     <div v-if="summeCard <= 25">
-      <h2> Versuchen sie ein Mockup auf Papier zu erstellen um die ersten erfahrungen zu sammeln</h2>
+      <h2> Versuchen sie ein Mockup auf Papier zu erstellen</h2>
       <div class="center-left" style="margin-top: 1rem; margin-bottom: 1rem">
         <div style="text-align: justify">{{ descriptions[0].desctiption }}</div>
         <br>
@@ -34,7 +34,25 @@
         Das Fragen des Entscheidungshelfers sind in verschiedene Kategorien unterteilt und werden anhand der
         folgenden Präferenzmatrix gewichtet:
       </h2>
-      <img src="../assets/Praeferenzmatrix.png" style="margin-top: 2rem">
+      <img src="../assets/Matrix.png" style="margin-top: 2rem; margin-bottom: 2rem">
+
+    </div>
+    <div class="center-left" style="text-align: left">
+
+      1 -	Wie viele Personen in ihrem Projekt arbeitet mit dem MockUp?<br>
+      2 -	Werden im Projekt mehrere Personen gleichzeitig mit dem MockZup arebiten<br>
+      3 -	Arbeiten die Mitarbeiter des ganzen Projekts am gleichen Ort oder ortsunabhängig<br>
+      4 -	Soll das MockUp verwendet werden, um eine durchgängige User Experience darzustellen?<br>
+      5 -	Soll das MockUp verwendet werden um genaue Abläufe von technischen Funktionen der Webseite (z.B. Filterfunktion, Suchfunktion, Darstellungsfunktionen etc. zu detaillieren?<br>
+      6 -	Soll das erstellte MockUp verwendet werden, um Usertests durchzuführen?<br>
+      7 -	Welchen Detailierungsgrad wird mit dem MockUp hinsichtlich der endgültigen Lösung angestrebt?<br>
+      8 -	In welcher Phase des Projekts befinden sie sich?<br>
+      9 -	Soll das MockUp verwendet werden, um zu prüfen, on echte Nutzer das Tool intuitiv verstehen?<br>
+      10 -	Wie wichtig beurteilen sie den Design-Aspekt, des von ihnen angestrebten MockUp’s?<br>
+      11 -	Wenn sie die Funktionalität und Umfang des User Interface betrachten, welches mit dem MockUp dargestellt wird, wie komplex würden sie die Lösung beschreiben?<br>
+      12 -	Ist das Vorhaben starkem zeitlichen Druck ausgesetzt?<br>
+      13 -	Ist das Vorhaben starkem finanziellen Druck ausgesetzt?<br>
+
     </div>
    <!-- <h2 ref="h2">Das Ergebnis ihrer Fragen ist: {{ summeCard }}</h2> -->
     <v-btn class="text-button" v-on:click="back" style="margin-bottom: 2rem; margin-top: 2rem"> Zurück zum Entscheidungshelfer</v-btn>
@@ -70,7 +88,7 @@ export default {
         ],
         descriptions: [
           {title: "Mockup / Wireframe auf Papier", desctiption: "Aufgrund deiner Antworten empfehlen wir " +
-                "dir das Arbeiten mit Handskizzen und statischen Wireframes. Die dadurch erhaltene Repräsentation " +
+                "ihnen das Arbeiten mit Handskizzen und statischen Wireframes. Die dadurch erhaltene Repräsentation " +
                 "des Designs und Darstellung der verwendeten Positionierung und Grösse der Elemente ist für dein Projekt ausreichend. " +
                 "Fokussiere dich auf die einzelnen Elemente der späteren Seite, diese innerhalb des Layouts anzuordnen und nicht ein " +
                 "finales Design der Webseite jetzt zu spezifizieren."
@@ -78,9 +96,9 @@ export default {
           {
             title: "diegitales statisches Mockup", desctiption: "Ein Digitales Mockup hat im Gegensatz " +
                 "zur Papierform den Vorteil, dass mehrere Personen gleichzeitig daran arbeiten können. " +
-                "Deshalb werden Mockups in Papierform meist nur verwendet, um eine grobe initiale Skize zu " +
+                "Deshalb werden Mockups in Papierform meist nur verwendet, um eine grobe initiale Skizze zu " +
                 "erstellen welche später verwendet wird um daraus ein Statisches Mockup zu erstellen. Dabei ist " +
-                "dem Benutzer überlassen in welchem detailierungsgrad das Mockup erstellt wird. Die erste Möglichkeit " +
+                "dem Benutzer überlassen in welchem detaillierungsgrad das Mockup erstellt wird. Die erste Möglichkeit " +
                 "ist ein Wireframe indem man nur die vorhandenen Funktionen darstellt und den Design Aspekt noch aussen " +
                 "vor lässt. Bis hin zum vollständigen Design, welches den Stakeholdern oder gar den End Usern bereits gezeigt " +
                 "werden kann um Feedback zu geben. "
@@ -114,7 +132,7 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
   font-size: 21px;
 }
 
