@@ -2,7 +2,7 @@
   <v-app>
     <v-container>
     <div>
-      <h1>Herzlich willkommen beim Mockup-Entscheidungshelfer!</h1>
+      <h1>Herzlich willkommen beim MockUp-Entscheidungshelfer!</h1>
       <br>
       <div class="center">
         Gerne möchten wir Ihnen mehr über uns,
@@ -11,13 +11,13 @@
         <br>
         Wir sind 3 Studierende im Studiengang Wirtschaftsinformatik an der Zürcher Hochschule für angewandte Wissenschaften.
         Im Modul «Integration» haben wir uns für die Aufgabe entschieden, den Unterschied zwischen verschiedenen
-        Mockup-Tools genauer zu analysieren und aufgrund dieser Analysen einen Entscheidungshelfer zu programmieren,
-        welcher die Wahl eines Mockup-Tools erleichtern soll.
+        MockUp-Tools genauer zu analysieren und aufgrund dieser Analysen einen Entscheidungshelfer zu programmieren,
+        welcher die Wahl eines MockUp-Tools erleichtern soll.
         <br>
         <br>
         In diesem Entscheidungshelfer werden diverse Fragen zum Projekt gestellt.
         Im Hintergrund wird aufgrund dieser Fragen eine Empfehlung berechnet und anschliessend vorgeschlagen.
-        Das Ergebnis soll Aufschluss darüber geben, wie das Mockup am besten erstellt wird -
+        Das Ergebnis soll Aufschluss darüber geben, wie das MockUp am besten erstellt wird -
         beispielsweise per Hand, statisch oder interaktiv.
       </div>
       <v-btn class="text-button" to="/entscheidungshelfer">Entscheidungshelfer</v-btn>

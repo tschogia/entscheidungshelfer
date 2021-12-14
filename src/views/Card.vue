@@ -115,7 +115,7 @@ export default {
           min: "viel",
           max: "wenig"
         },
-        {question: "in welcher Phase des Projekts befinden sie sich?",
+        {question: "In welcher Phase des Projekts befinden sie sich?",
           answer: 0,
           gewichtung: 72,
           min: "Analyse",

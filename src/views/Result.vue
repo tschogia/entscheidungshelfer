@@ -4,7 +4,7 @@
   <div id="result">
     <h1>Ergebnis:</h1>
     <div v-if="summeCard <= 25">
-      <h2> Versuchen sie ein Mockup auf Papier zu erstellen</h2>
+      <h2> Versuchen sie ein MockUp auf Papier zu erstellen</h2>
       <div class="center-left" style="margin-top: 1rem; margin-bottom: 1rem">
         <div style="text-align: justify">{{ descriptions[0].desctiption }}</div>
         <br>
@@ -18,12 +18,12 @@
       <img src="../assets/die-besten-wireframe-tools.jpg" alt="" style="margin-top: 2rem">
     </div>
     <div v-if="summeCard > 25 && summeCard < 35">
-      <h2> Erstellen sie ein digitales Mockup ohne Interaktion</h2>
+      <h2> Erstellen sie ein digitales MockUp ohne Interaktion</h2>
       <div class="center" style="margin-top: 1rem; margin-bottom: 1rem">{{ descriptions[1].desctiption }}</div>
       <img src="../assets/walling-2-a9wDBS1KE-unsplash.jpg" alt="" style="margin-top: 2rem; width: 60%">
     </div>
     <div v-if="summeCard > 35">
-      <h2> Erstellen sie ein digitales Mockup mit Interaktion</h2>
+      <h2> Erstellen sie ein digitales MockUp mit Interaktion</h2>
       <div class="center" style="margin-top: 1rem; margin-bottom: 1rem">{{ descriptions[2].desctiption }}</div>
       <img src="../assets/05.jpeg" alt="" style="margin-top: 2rem">
     </div>
@@ -81,11 +81,6 @@ export default {
       return {
         name: "Result.vue",
         isclicked: false,
-        results: [
-          {result: "Papierform", answer: 0},
-          {result: "Mockup ohne interaktion", answer: 0},
-          {result: "Mockup mit Interaktion", answer: 0},
-        ],
         descriptions: [
           {title: "Mockup / Wireframe auf Papier", desctiption: "Aufgrund deiner Antworten empfehlen wir " +
                 "ihnen das Arbeiten mit Handskizzen und statischen Wireframes. Die dadurch erhaltene Repräsentation " +
