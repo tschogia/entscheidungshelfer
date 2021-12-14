@@ -41,7 +41,7 @@ export default {
       isclicked: false,
       summeAllerFragen: 0,
       questions: [
-        {question: "Wie viele Personen in ihrem Projekt arbeiten mit dem Mockup?",
+        {question: "Wie viele Personen in ihrem Projekt arbeiten mit dem MockUp?",
           answer: 0,
           gewichtung: 4,
           min: "eine",
